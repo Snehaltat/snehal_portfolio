@@ -3,14 +3,18 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap v4.6 links below -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-    	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>snehal portfoli</title>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+	<!-- External CSS link below -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <!-- link from aos github -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<title>snehal Portfolio</title>
 </head>
 <body>
- 	<div class="maindiv" id="main_div">
+	<div class="maindiv" id="main_div">
 		<div class="navigation_bar">
 				<!-- naviagtion code below -->
 				<nav class="navbar navbar-expand-lg ">
@@ -46,7 +50,7 @@
         <div align="center">
             <span>Hello</span><br>
             <span>My name is </span><br>
-            <span class="myname homename">SNEHAL TAT</span><br>
+            <div class="myname homename" data-aos="slide-up">Snehal Tat</div><br>
             <span>I am a <span id="designation">Full Stack Java Developer</span></span>
         </div>
     </div>
@@ -54,10 +58,10 @@
         <div align="center">
           <table class="aboutdata"  width="90%" height=350px>
             <tr>
-              <td width="40%" align="center"><img class="myimg" src="C:\Users\Mangesh Tat\OneDrive\Desktop\sss.jpg" height="200px"></td>
+              <td width="40%" align="center"><img class="myimg" src="C:\Users\Mangesh Tat\OneDrive\Desktop\passportphoto.jfif" height="300px"></td>
               <td align="center" valign="top">
                   <h2 class="section_head">About</h2>
-                  <p class="cobj"> To obtain a position as a Full Stack Developer that will allow me to use my expertise in coding, debugging, testing, and troubleshooting.</p>
+                  <p class="cobj">To obtain a position as a Full Stack Developer that will allow me to use my expertise in coding, debugging, testing, and troubleshooting.</p>
 
               </td>
             </tr>
@@ -65,14 +69,76 @@
         </div>
     </div>
     <div class="skills sect" id="skills_sec">
-      <div>skills sections</div> 
+        <div class="skill_heading" align="center">
+          <h1 class="section_head" >Skills</h1>
+          <table  width="80%" height="300px" >
+              <tr class="skillset">
+                <td valign="top">
+                  <ul type="none">
+                    <li><img src="https://e7.pngegg.com/pngimages/509/412/png-clipart-microsoft-sql-server-microsoft-azure-sql-database-table-table-furniture-text-thumbnail.png" height="30px">  Oracle SQl</li>
+                    <li><img src="https://cdn0.iconfinder.com/data/icons/social-network-9/50/22-512.png" height="30px"> HTML</li>
+                    <li><img scr="https://1000marcas.net/wp-content/uploads/2021/02/CSS-Logo.png" height="30px"> CSS</li>
+                    <li><img scr="http://pluspng.com/img-png/bootstrap-png-bootstrap-512.png" height="30px"> Bootstrap </li>
+                    <li><img scr="https://tse4.mm.bing.net/th?id=OIP.Oag0dh4MINdG_qxOzJMoiwHaIB&pid=Api&P=0&h=180" height="30px"> JavaScript</li>
+                  </ul>
+                </td>
+                <td valign="top">
+                  <ul type="none">
+                    <li><img scr="https://www.tekoway.com/wp-content/uploads/2017/05/react-logo.png" height="30px"> React JS</li>
+                  <li><img scr="https://cdn3.iconfinder.com/data/icons/filetype-shadow/100/file_XML-512.png" height="30px"> XML</li>
+                  <li><img scr="https://cdn2.iconfinder.com/data/icons/file-formats-flat-3/780/500_-_JSON-1024.png" height="30px"> JSON</li>
+                  <li><img scr="https://www.opc-router.com/wp-content/uploads/2021/03/mongodb_thumbnail.png" height="30px"> MongoDB</li>
+                  </ul>
+                </td>
+              </tr>
+          </table>
+        </div>
     </div>
     <div class="projects sect" id="projects_sec">
-      <div>projects sections</div> 
+      <div class="project" align="center">
+        <h1  class="section_head" >Projects</h1>
+        <div class="project_cards">
+                              <div class="card-deck">
+              <div class="card" data-aos="slide-right">
+                <img src="https://cdn-icons-png.flaticon.com/512/2344/2344132.png" class="card-img-top" alt="..." height="300px">
+                <div class="card-body">
+                  <h5 class="card-title">Calculator</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+              <div class="card" data-aos="slide-down">
+                <img src="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-512.png" class="card-img-top" alt="..." height="300px">
+                <div class="card-body">
+                  <h5 class="card-title">Weather App</h5>
+                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                  
+                </div>
+              </div>
+              <div class="card" data-aos="slide-left">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2dx9SSpuAvjUVG2Nsn1bjcOVTOhMB9cygRm8RYnE&s" class="card-img-top" alt="..." height="250px" style="padding: 20px;">
+                <div class="card-body">
+                  <h5 class="card-title">Calendar</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                 
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- project cards ends here -->
+      </div> 
     </div>
     <div class="contact sect" id="contact_sec">
       <div>contact sections</div> 
     </div>
 	</div>
+  <!-- aos script tag -->
+  <div>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+       duration:1500
+    });
+  </script>
+  </div>
 </body>
 </html>
